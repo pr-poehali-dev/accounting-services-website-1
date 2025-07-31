@@ -194,6 +194,295 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Business Categories & Tax Regimes */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Аутсорсинг по категориям бизнеса
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Работаем со всеми формами ведения бизнеса и налоговыми режимами
+            </p>
+          </div>
+
+          {/* Business Categories */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <Card className="border border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                    <Icon name="Store" size={24} className="text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Торговля</h3>
+                </div>
+                <p className="text-muted-foreground mb-3">
+                  Розничная и оптовая торговля, интернет-магазины, маркетплейсы
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Учет товарных операций</li>
+                  <li>• Работа с НДС</li>
+                  <li>• Складской учет</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                    <Icon name="Wrench" size={24} className="text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Услуги</h3>
+                </div>
+                <p className="text-muted-foreground mb-3">
+                  Консалтинг, IT, образование, ремонт, красота, здоровье
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Учет доходов от услуг</li>
+                  <li>• Работа с договорами</li>
+                  <li>• Кадровый учет</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                    <Icon name="Factory" size={24} className="text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Производство</h3>
+                </div>
+                <p className="text-muted-foreground mb-3">
+                  Малое производство, пищевая промышленность, рукоделие
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Учет материалов</li>
+                  <li>• Калькуляция себестоимости</li>
+                  <li>• Производственная отчетность</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                    <Icon name="Truck" size={24} className="text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Логистика</h3>
+                </div>
+                <p className="text-muted-foreground mb-3">
+                  Грузоперевозки, курьерские услуги, складские операции
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Путевые листы</li>
+                  <li>• ГСМ и амортизация</li>
+                  <li>• Транспортная отчетность</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                    <Icon name="Utensils" size={24} className="text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Общепит</h3>
+                </div>
+                <p className="text-muted-foreground mb-3">
+                  Кафе, рестораны, доставка еды, кейтеринг
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Работа с кассами</li>
+                  <li>• Учет продуктов</li>
+                  <li>• Алкогольная отчетность</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                    <Icon name="Code" size={24} className="text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">IT и Digital</h3>
+                </div>
+                <p className="text-muted-foreground mb-3">
+                  Разработка, дизайн, маркетинг, блогинг, онлайн-курсы
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Валютное законодательство</li>
+                  <li>• Роялти и авторские права</li>
+                  <li>• IT льготы</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Tax Regimes */}
+          <div className="bg-muted/30 rounded-2xl p-8">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                Работаем со всеми налоговыми режимами
+              </h3>
+              <p className="text-lg text-muted-foreground">
+                Профессиональное ведение учета для любой формы ведения бизнеса
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="p-2 bg-blue-100 rounded-lg mr-3">
+                    <Icon name="User" size={20} className="text-blue-600" />
+                  </div>
+                  <h4 className="font-semibold text-lg">ИП</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Индивидуальное предпринимательство
+                </p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• Книга доходов и расходов</li>
+                  <li>• Налоговые декларации</li>
+                  <li>• Страховые взносы</li>
+                  <li>• Работа с сотрудниками</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="p-2 bg-green-100 rounded-lg mr-3">
+                    <Icon name="Building" size={20} className="text-green-600" />
+                  </div>
+                  <h4 className="font-semibold text-lg">ООО</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Общество с ограниченной ответственностью
+                </p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• Полный бухгалтерский учет</li>
+                  <li>• Баланс и отчеты</li>
+                  <li>• Налог на прибыль</li>
+                  <li>• Дивиденды участникам</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="p-2 bg-purple-100 rounded-lg mr-3">
+                    <Icon name="Zap" size={20} className="text-purple-600" />
+                  </div>
+                  <h4 className="font-semibold text-lg">УСН</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Упрощенная система налогообложения
+                </p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• УСН "Доходы" 6%</li>
+                  <li>• УСН "Доходы минус расходы" 15%</li>
+                  <li>• Льготные ставки по регионам</li>
+                  <li>• Кассовый метод учета</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="p-2 bg-orange-100 rounded-lg mr-3">
+                    <Icon name="Smartphone" size={20} className="text-orange-600" />
+                  </div>
+                  <h4 className="font-semibold text-lg">НПД</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Налог на профессиональный доход
+                </p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• Работа через приложение</li>
+                  <li>• 4% с физлиц, 6% с юрлиц</li>
+                  <li>• Без отчетности</li>
+                  <li>• Переход на другие режимы</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="p-2 bg-red-100 rounded-lg mr-3">
+                    <Icon name="FileText" size={20} className="text-red-600" />
+                  </div>
+                  <h4 className="font-semibold text-lg">Патент</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Патентная система налогообложения
+                </p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• Фиксированная стоимость</li>
+                  <li>• По видам деятельности</li>
+                  <li>• Сроком от 1 до 12 месяцев</li>
+                  <li>• Книга доходов</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="p-2 bg-teal-100 rounded-lg mr-3">
+                    <Icon name="Calculator" size={20} className="text-teal-600" />
+                  </div>
+                  <h4 className="font-semibold text-lg">ОСНО</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Общая система налогообложения
+                </p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• НДС 20%</li>
+                  <li>• Налог на прибыль 20%</li>
+                  <li>• НДФЛ 13%</li>
+                  <li>• Полная отчетность</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="p-2 bg-yellow-100 rounded-lg mr-3">
+                    <Icon name="Tractor" size={20} className="text-yellow-600" />
+                  </div>
+                  <h4 className="font-semibold text-lg">ЕСХН</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Единый сельскохозяйственный налог
+                </p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• 6% с разности доходов и расходов</li>
+                  <li>• НДС 10%/20%</li>
+                  <li>• Для сельхозпроизводителей</li>
+                  <li>• Льготы и субсидии</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <div className="flex items-center mb-4">
+                  <div className="p-2 bg-indigo-100 rounded-lg mr-3">
+                    <Icon name="Users" size={20} className="text-indigo-600" />
+                  </div>
+                  <h4 className="font-semibold text-lg">Смешанные</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Комбинированные режимы
+                </p>
+                <ul className="text-xs text-muted-foreground space-y-1">
+                  <li>• УСН + Патент</li>
+                  <li>• ОСНО + УСН по видам</li>
+                  <li>• НПД + ИП статус</li>
+                  <li>• Переходные периоды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form */}
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
