@@ -29,8 +29,17 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section 
+        className="relative py-20 bg-gradient-to-br from-blue-50/90 via-white/90 to-blue-50/90"
+        style={{
+          backgroundImage: `url('/img/c5242fd0-70c9-4d57-99aa-d3fb250c8f6c.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-white/80"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
             Ваша бухгалтерия<br />
             <span className="text-primary">под контролем</span>
@@ -38,10 +47,18 @@ export default function Index() {
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Профессиональные услуги для малого и среднего бизнеса
           </p>
-          <p className="text-lg text-muted-foreground mb-12 max-w-4xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
             Ведете малый или средний бизнес и хотите сосредоточиться на его росте, не отвлекаясь на сложности бухгалтерии? 
             Мы предлагаем полный спектр бухгалтерских услуг, которые обеспечат порядок в ваших финансах и соблюдение всех требований законодательства.
           </p>
+          <div className="flex items-center justify-center mb-12">
+            <div className="bg-primary/10 backdrop-blur-sm rounded-full px-6 py-3 border border-primary/20">
+              <div className="flex items-center space-x-2 text-primary font-medium">
+                <Icon name="MapPin" size={20} />
+                <span>Оказываем услуги по всей России</span>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg">
               <Icon name="Phone" size={20} className="mr-2" />
